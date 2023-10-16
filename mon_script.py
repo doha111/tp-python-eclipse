@@ -8,8 +8,11 @@ class Auteur:
         self.nom = nom
         
 auteur1 = Auteur("J.K. Rowling")
+auteur2 = Auteur("jean anouilh")
+
 livre1 = Livre("Harry Potter and the Sorcerer's Stone", auteur1)
 livre2 = Livre("Harry Potter", auteur1)
+livre3 = Livre("Antigone", auteur2)
 
 class Bibliotheque:
     def __init__(self):
@@ -28,8 +31,9 @@ class Bibliotheque:
 bibliotheque = Bibliotheque()
 
 bibliotheque.ajouter_livre(livre2)
+bibliotheque.ajouter_livre(livre3)
 
-resultat = bibliotheque.emprunter_livre(livre2)
+resultat = bibliotheque.emprunter_livre(livre3)
 
 
 
